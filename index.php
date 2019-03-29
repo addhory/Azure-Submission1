@@ -15,7 +15,7 @@
     <p>Isi data dibawah ini lalu klik <strong>Submit</strong> untuk mendaftar.</p>
     </div>
     <div class="container">
-      <form action="azure.php" method="post" enctype = "multipart/form-data">
+      <form action="index.php" method="post" enctype = "multipart/form-data">
           Name  <input type="text" name="name" id="name" /></br></br>  
           Email <input type="text" name="email" id="name"/></br></br>
           City <input type="text" name="city"id="city"/></br></br>
