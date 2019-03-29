@@ -63,7 +63,11 @@
                 echo "<tr><th>Name</th>";
                 echo "<th><th>";
                 echo "<th><th>";
+                echo "<th><th>";
+                echo "<th><th>";
                 echo "<th>Email</th>";
+                echo "<th><th>";
+                echo "<th><th>";
                 echo "<th><th>";
                 echo "<th><th>";
                 echo "<th>City</th></tr>";
@@ -71,7 +75,11 @@
                     echo "<tr><td>".$registrant['name']."</td>";
                     echo "<th><th>";
                     echo "<th><th>";
+                    echo "<th><th>";
+                    echo "<th><th>";
                     echo "<td>".$registrant['email']."</td>";
+                    echo "<th><th>";
+                    echo "<th><th>";
                     echo "<th><th>";
                     echo "<th><th>";
                     echo "<td>".$registrant['city']."</td></tr>";
