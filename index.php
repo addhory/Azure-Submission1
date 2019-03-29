@@ -66,7 +66,6 @@
                     echo "<tr><td>".$registrant['name']."</td>";
                     echo "<td>".$registrant['email']."</td>";
                     echo "<td>".$registrant['city']."</td></tr>";
-                    
                 }
                 echo "</table>";
             } else {
