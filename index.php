@@ -51,7 +51,8 @@
             echo "Failed: " . $e;
         }
         echo "<h3>Your're registered!</h3>";
-    } else if (isset($_POST['load_data'])) {
+    }  
+    else if (isset($_POST['load_data'])) {
         try {
             $sql_select = "SELECT * FROM Registration";
             $stmt = $conn->query($sql_select);
