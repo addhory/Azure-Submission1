@@ -61,7 +61,9 @@
                 echo"<div>";
                 echo "<table border='8'>";
                 echo "<tr><th>Name</th>";
+                echo "<th>  <th>";
                 echo "<th>Email</th>";
+                echo "<th>  <th>";
                 echo "<th>City</th></tr>";
                 foreach($registrants as $registrant) {
                     echo "<tr><td>".$registrant['name']."</td>";
