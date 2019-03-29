@@ -53,24 +53,37 @@
         echo "<h3>Your're registered!</h3>";
     } else if (isset($_POST['load_data'])) {
         try {
-            $sql_select = "SELECT * FROM Registration";
-            $stmt = $conn->query($sql_select);
-            $registrants = $stmt->fetchAll(); 
-            if(count($registrants) > 0) {
+            $sql_select = "SELECT * FROM Registration ORDER BY name";
+            $stmt = sqlsrv_query($conn, $sql);
+            if($stmt === false){
+                die(print_r(sqlsrv_errors(), true))
+            }
+            if(sqlsrv_has_rows($stmt)){
                 echo "<h2>People who are registered:</h2>";
                 echo "<table>";
                 echo "<tr><th>Name</th>";
                 echo "<th>Email</th>";
                 echo "<th>City</th></tr>";
+
+                while($row = sqlsrv_fetch_array($stmt)){
+                    echo "<tr><td>".$registrant['name']."</td>";
+                    echo "<td>".$registrant['email']."</td>";
+                    echo "<td>".$registrant['city']."</td></tr>";
+                }
+                echo "</table>"; 
+            }else {
+                echo "<h3>No one is currently registered.</h3>";
+            }
+            /*$registrants = $stmt->fetchAll(); 
+            if(count($registrants) > 0) {
+                
                 foreach($registrants as $registrant) {
                     echo "<tr><td>".$registrant['name']."</td>";
                     echo "<td>".$registrant['email']."</td>";
                     echo "<td>".$registrant['city']."</td></tr>";
                 }
                 echo "</table>";
-            } else {
-                echo "<h3>No one is currently registered.</h3>";
-            }
+            } */
         } catch(Exception $e) {
             echo "Failed: " . $e;
         }
