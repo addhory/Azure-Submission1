@@ -22,11 +22,6 @@
           <input type="submit" name ="submit" value = "Submit">
           <input type="submit" name = "load_data" value="Load Data">      
       </form>
-      <table border=2>
-            <th>awsfg</th>
-            <td>asdfa</td>
-            <th>asfdf</th>
-      </table>
     </div>
     <?php
     $host = "mwebappserver.database.windows.net";
@@ -64,7 +59,7 @@
             if(count($registrants) > 0) {
                 echo "<h2>People who are registered:</h2>";
                 echo"<div>";
-                echo "<table cellspacing='2'>";
+                echo "<table border='2'>";
                 echo "<tr><th>Name</th>";
                 echo "<th>Email</th>";
                 echo "<th>City</th></tr>";
