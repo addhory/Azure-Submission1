@@ -51,15 +51,15 @@
             echo "Failed: " . $e;
         }
         echo "<h3>Your're registered!</h3>";
-    } ?> <?php else if (isset($_POST['load_data'])) { ?>
-        <?php try {
+    } else if (isset($_POST['load_data'])) {
+        try {
             $sql_select = "SELECT * FROM Regis";
             $stmt = $conn->query($sql_select);
             $registrants = $stmt->fetchAll(); 
-            if(count($registrants) > 0) { 
-                echo "<h2>People who are registered:</h2>"; ?>
-                <div>
-                <?php echo "<table>";
+            if(count($registrants) > 0) {
+                echo "<h2>People who are registered:</h2>";
+                echo"<div>";
+                echo "<table>";
                 echo "<tr><th>Name</th>";
                 echo "<th><th>";
                 echo "<th><th>";
@@ -84,14 +84,13 @@
                     echo "<th><th>";
                     echo "<td>".$registrant['city']."</td></tr>";
                 }
-                echo "</table>"; ?>
-                </div>
-            } <?php else {
+                echo "</table>";
+            } else {
                 echo "<h3>No one is currently registered.</h3>";
-            } ?>
-        } <?php catch(Exception $e) {
+            }
+        } catch(Exception $e) {
             echo "Failed: " . $e;
-        } ?>
+        }
     }
  ?>
       
