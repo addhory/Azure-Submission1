@@ -23,9 +23,9 @@
           <input type="submit" name = "load_data" value="Load Data">      
       </form>
       <table border=2>
-            <th></th>
-            <td></td>
-            <th></th>
+            <th>awsfg</th>
+            <td>asdfa</td>
+            <th>asfdf</th>
       </table>
     </div>
     <?php
