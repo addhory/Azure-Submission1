@@ -42,7 +42,7 @@
             // Insert data
             $sql_insert = "INSERT INTO Registration (name, email, city) 
                         VALUES (?,?,?)";
-            $stmt = $conn->prepare($sql_insFert);
+            $stmt = $conn->prepare($sql_insert);
             $stmt->bindValue(1, $name);
             $stmt->bindValue(2, $email);
             $stmt->bindValue(3, $city);
