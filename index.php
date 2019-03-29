@@ -61,11 +61,11 @@
                 echo "<table>";
                 echo "<tr><th>Name</th>";
                 echo "<th>Email</th>";
-                echo "<th>City</th>";
+                echo "<th>City</th></tr>";
                 foreach($registrants as $registrant) {
                     echo "<tr><td>".$registrant['name']."</td>";
                     echo "<td>".$registrant['email']."</td>";
-                    echo "<td>".$registrant['city']."</td>";
+                    echo "<td>".$registrant['city']."</td></tr>";
                     
                 }
                 echo "</table>";
