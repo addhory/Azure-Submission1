@@ -22,6 +22,11 @@
           <input type="submit" name ="submit" value = "Submit">
           <input type="submit" name = "load_data" value="Load Data">      
       </form>
+      <table cellspacing=2>
+            <th></th>
+            <td></td>
+            <th></th>
+      </table>
     </div>
     <?php
     $host = "mwebappserver.database.windows.net";
