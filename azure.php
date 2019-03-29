@@ -24,7 +24,7 @@
       </form>
     </div>
     <?php
-    $host = "mwebappserver.database.windows.net";
+    $host = "mwebappserver";
     $user = "xxridho";
     $pass = "Indonesia11";
     $db = "mywebbappdatabase";
