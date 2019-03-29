@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Registration Form</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -40,7 +40,7 @@
             $email = $_POST['email'];
             $city = $_POST['city'];
             // Insert data
-            $sql_insert = "INSERT INTO Registration (name, email, city) 
+            $sql_insert = "INSERT INTO Regis (name, email, city) 
                         VALUES (?,?,?)";
             $stmt = $conn->prepare($sql_insert);
             $stmt->bindValue(1, $name);
@@ -51,10 +51,9 @@
             echo "Failed: " . $e;
         }
         echo "<h3>Your're registered!</h3>";
-    }  
-    else if (isset($_POST['load_data'])) {
+    } else if (isset($_POST['load_data'])) {
         try {
-            $sql_select = "SELECT * FROM Registration";
+            $sql_select = "SELECT * FROM Regis";
             $stmt = $conn->query($sql_select);
             $registrants = $stmt->fetchAll(); 
             if(count($registrants) > 0) {
