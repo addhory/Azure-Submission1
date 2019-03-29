@@ -24,10 +24,11 @@
       </form>
     </div>
     <?php
-    $host = "mwebappserver.database.windows.net";
+    $host = "odbc:mwebappserver.database.windows.net";
     $user = "xxridho";
     $pass = "Indonesia11";
     $db = "mywebbappdatabase";
+    $mssqldriver = 'ODBC Driver 11 for SQL Server';
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
