@@ -3,4 +3,9 @@ create table [dbo].[Registration](
     name VARCHAR(50),
     email VARCHAR(50),
     city VARCHAR(50),
+    PRIMARY KEY CLUSTERED 
+    (
+        [ID] ASC
+    )
+    ) ON [PRIMARY]
 );
