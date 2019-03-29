@@ -59,7 +59,7 @@
             if(count($registrants) > 0) {
                 echo "<h2>People who are registered:</h2>";
                 echo"<div>";
-                echo "<table>";
+                echo "<table cellspacing='2'>";
                 echo "<tr><th>Name</th>";
                 echo "<th>Email</th>";
                 echo "<th>City</th></tr>";
@@ -69,7 +69,6 @@
                     echo "<td>".$registrant['city']."</td></tr>";
                 }
                 echo "</table>";
-                echo"</div>";
             } else {
                 echo "<h3>No one is currently registered.</h3>";
             }
