@@ -59,7 +59,7 @@
             if(count($registrants) > 0) {
                 echo "<h2>People who are registered:</h2>";
                 echo"<div>";
-                echo "<table border=''>";
+                echo "<table>";
                 echo "<tr><th>Name</th>";
                 echo "<th>  <th>";
                 echo "<th>Email</th>";
