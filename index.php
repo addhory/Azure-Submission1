@@ -22,7 +22,7 @@
           <input type="submit" name ="submit" value = "Submit">
           <input type="submit" name = "load_data" value="Load Data">      
       </form>
-      <table cellspacing=2>
+      <table border=2>
             <th></th>
             <td></td>
             <th></th>
