@@ -20,7 +20,8 @@
           Email <input type="text" name="email" id="name"/></br></br>
           City <input type="text" name="city"id="city"/></br></br>
           <input type="submit" name ="submit" value = "Submit">
-          <input type="submit" name = "load_data" value="Load Data">      
+          <input type="submit" name = "load_data" value="Load Data">
+          <button type="submit" class="btn btn-primary" name = "load_data" value ="Load Data"></button>      
       </form>
     </div>
     <?php
