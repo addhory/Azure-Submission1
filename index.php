@@ -62,21 +62,11 @@
                 echo '<div class="container">';
                 echo '<table border="1" cellpadding="1" cellspacing="0">';
                 echo "<tr><th>Name</th>";
-                echo "<th><th>";
-                echo "<th><th>";
-                echo "<th><th>";
-                echo "<th><th>";
                 echo "<th>Email</th>";
-                echo "<th><th>";
-                echo "<th><th>";
-                echo "<th><th>";
-                echo "<th><th>";
                 echo "<th>City</th></tr>";
                 foreach($registrants as $registrant) {
                     echo "<tr><td>".$registrant['name']."</td>";
-                    echo "<th><th>";
                     echo "<td>".$registrant['email']."</td>";
-                    echo "<th><th>";
                     echo "<td>".$registrant['city']."</td></tr>";
                 }
                 echo "</table>";
