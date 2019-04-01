@@ -24,6 +24,8 @@
           <button type="submit" class="btn btn-primary" name = "load_data" value ="Load Data" >Button Load</button>      
       </form>
     </div>
+
+    <?= "hello" ?>
     <?php
     $host = "mwebappserver.database.windows.net";
     $user = "xxridho";
