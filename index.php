@@ -60,7 +60,7 @@
             if(count($registrants) > 0) {
                 echo "<h2>People who are registered:</h2>";
                 echo '<div class="container">';
-                echo '<table border="1" cellpadding="0" cellspacing="0">';
+                echo '<table border="1" cellpadding="1" cellspacing="0">';
                 echo "<tr><th>Name</th>";
                 echo "<th><th>";
                 echo "<th><th>";
@@ -75,13 +75,7 @@
                 foreach($registrants as $registrant) {
                     echo "<tr><td>".$registrant['name']."</td>";
                     echo "<th><th>";
-                    echo "<th><th>";
-                    echo "<th><th>";
-                    echo "<th><th>";
                     echo "<td>".$registrant['email']."</td>";
-                    echo "<th><th>";
-                    echo "<th><th>";
-                    echo "<th><th>";
                     echo "<th><th>";
                     echo "<td>".$registrant['city']."</td></tr>";
                 }
